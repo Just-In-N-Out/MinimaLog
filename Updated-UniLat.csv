@@ -1,0 +1,265 @@
+,id,name,primary_region,can_unilateral
+0,1,Back squat,Legs,unilaterally
+1,2,Front squat,Legs,unilaterally
+2,3,Overhead squat,Legs,unilaterally
+3,4,Zercher squat,Legs,unilaterally
+4,5,Safety bar squat,Legs,unilaterally
+5,6,Box squat,Legs,unilaterally
+6,7,Goblet squat,Legs,unilaterally
+7,8,Landmine squat,Legs,yes
+8,9,Belt squat,Legs,unilaterally
+9,10,Hack squat (machine),Legs,unilaterally
+10,11,Smith machine squat,Legs,unilaterally
+11,12,Leg press,Other,unilaterally
+13,14,Bulgarian split squat,Legs,yes
+14,15,Split squat (static),Legs,yes
+15,16,Forward lunge,Legs,yes
+16,17,Reverse lunge,Legs,yes
+17,18,Walking lunge,Legs,yes
+18,19,Lateral lunge,Legs,yes
+19,20,Curtsy lunge,Legs,yes
+20,21,Step-up,Legs,yes
+21,22,Box step-down,Legs,yes
+22,23,Pistol squat,Legs,yes
+23,24,Sissy squat,Legs,unilaterally
+24,25,Conventional deadlift,Legs,unilaterally
+25,26,Sumo deadlift,Legs,unilaterally
+26,27,Trap-bar deadlift,Legs,unilaterally
+27,28,Romanian deadlift,Legs,unilaterally
+28,29,Stiff-leg deadlift,Legs,unilaterally
+30,31,Good morning,Legs,unilaterally
+31,32,Barbell hip thrust,Legs,unilaterally
+32,33,Glute bridge,Legs,unilaterally
+33,34,Cable pull-through,Legs,yes
+34,35,Kettlebell swing,Other,yes
+35,36,45° back extension,Legs,unilaterally
+36,37,Reverse hyperextension,Legs,unilaterally
+37,38,Nordic hamstring curl,Legs,unilaterally
+38,39,Seated leg curl (machine),Legs,unilaterally
+39,40,Lying leg curl (machine),Legs,unilaterally
+41,42,Glute-ham raise (GHR),Legs,unilaterally
+42,43,Jefferson deadlift,Legs,unilaterally
+43,44,Snatch-grip deadlift,Legs,unilaterally
+44,45,Barbell bench press (flat),Chest,no
+45,46,Incline barbell bench press,Chest,no
+46,47,Decline barbell bench press,Chest,no
+47,48,Dumbbell bench press (flat),Chest,yes
+48,49,Incline dumbbell bench press,Chest,yes
+49,50,Decline dumbbell bench press,Chest,yes
+50,51,Push-up,Chest,unilaterally
+51,52,Weighted push-up,Chest,unilaterally
+52,53,Feet-elevated push-up,Chest,unilaterally
+53,54,Machine chest press,Chest,unilaterally
+54,55,Standing cable chest press,Chest,yes
+55,56,Dumbbell fly (flat),Chest,yes
+56,57,Smith machine bench press,Chest,unilaterally
+57,58,Dumbbell floor press,Other,yes
+58,59,Barbell floor press,Other,no
+59,60,Svend press (plate squeeze),Other,unilaterally
+60,61,"Overhead press (barbell, strict)",Shoulders,no
+61,62,Push press,Other,unilaterally
+62,63,Seated dumbbell shoulder press,Shoulders,yes
+63,64,Arnold press,Shoulders,unilaterally
+64,65,Machine shoulder press,Shoulders,unilaterally
+65,66,Landmine press,Shoulders,yes
+66,67,Z-press (seated on floor),Shoulders,unilaterally
+67,68,Smith machine shoulder press,Shoulders,unilaterally
+68,69,Pike push-up,Chest,unilaterally
+69,70,Handstand push-up,Chest,unilaterally
+70,71,Dumbbell lateral raise,Shoulders,yes
+71,72,Dumbbell front raise,Shoulders,yes
+72,73,Barbell bent-over row,Back,no
+73,74,Pendlay row,Back,unilaterally
+74,75,One-arm dumbbell row,Back,yes
+75,76,Chest-supported row (dumbbells),Back,yes
+76,77,T-bar row,Back,unilaterally
+77,78,Seated cable row,Back,yes
+79,80,Machine row (plate/selectorized),Back,unilaterally
+80,81,Inverted row,Back,unilaterally
+82,83,Yates row (underhand barbell),Back,no
+83,84,Seal row,Back,unilaterally
+85,86,Smith machine row,Back,unilaterally
+86,87,Band row (standing),Back,unilaterally
+87,88,Landmine row (two-hand),Back,yes
+88,89,Renegade row,Back,yes
+89,90,TRX/suspension row,Back,yes
+90,91,Pull-up (overhand),Back,unilaterally
+91,92,Chin-up (underhand),Back,unilaterally
+92,93,Neutral-grip pull-up,Back,unilaterally
+93,94,Weighted pull-up,Back,unilaterally
+94,95,Assisted pull-up (band/machine),Back,unilaterally
+95,96,Lat pulldown,Back,unilaterally
+96,97,Face pull,Back,unilaterally
+97,98,Behind-the-neck pulldown,Back,unilaterally
+98,99,Straight-arm pulldown,Back,unilaterally
+99,100,Rope pulldown (neutral-grip),Back,unilaterally
+100,101,Mixed-grip pull-up,Back,unilaterally
+101,102,Towel pull-up,Back,unilaterally
+102,103,Barbell curl,Arms,unilaterally
+103,104,Alternating dumbbell curl,Arms,yes
+104,105,Incline dumbbell curl,Arms,yes
+105,106,Hammer curl,Arms,unilaterally
+106,107,Preacher curl,Arms,unilaterally
+107,108,Cable curl (straight bar),Arms,yes
+108,109,Concentration curl,Arms,unilaterally
+109,110,Triceps rope pushdown,Arms,unilaterally
+110,111,Skullcrusher (lying triceps extension),Arms,unilaterally
+111,112,Overhead triceps extension (DB),Arms,unilaterally
+112,113,Close-grip bench press,Chest,unilaterally
+113,114,Parallel-bar dip,Other,unilaterally
+114,115,Plank,Core,unilaterally
+115,116,Side plank,Core,unilaterally
+116,117,Hollow body hold,Other,unilaterally
+117,118,Dead bug,Core,unilaterally
+118,119,Hanging leg raise,Core,unilaterally
+119,120,Captain’s chair knee raise,Other,unilaterally
+120,121,Cable woodchop,Core,yes
+121,122,Pallof press,Core,unilaterally
+122,123,Ab wheel rollout,Core,unilaterally
+123,124,Russian twist,Core,unilaterally
+124,125,Farmer’s carry,Full Body/Conditioning,unilaterally
+125,126,Suitcase carry,Full Body/Conditioning,yes
+126,127,Front-rack carry,Full Body/Conditioning,unilaterally
+127,128,Overhead carry,Full Body/Conditioning,unilaterally
+128,129,Power clean,Full Body/Conditioning,unilaterally
+129,130,Clean pull,Full Body/Conditioning,unilaterally
+130,131,Hang power clean,Full Body/Conditioning,unilaterally
+131,132,Power snatch,Full Body/Conditioning,unilaterally
+132,133,Snatch pull,Full Body/Conditioning,unilaterally
+133,134,Push jerk,Full Body/Conditioning,unilaterally
+134,135,Split jerk,Full Body/Conditioning,unilaterally
+135,136,Barbell high pull,Full Body/Conditioning,no
+136,137,Sandbag clean,Full Body/Conditioning,unilaterally
+137,138,Sled push / prowler,Back,unilaterally
+138,139,Cyclist squat (heels elevated),Legs,unilaterally
+139,140,Spanish squat (banded),Legs,unilaterally
+140,141,Cossack squat,Legs,yes
+141,142,Pendulum squat (machine),Legs,unilaterally
+142,143,Anderson (pin) squat,Legs,unilaterally
+143,144,ATG split squat,Legs,yes
+144,145,Poliquin step-up,Legs,yes
+145,146,Peterson step-up,Legs,yes
+146,147,Skater squat,Legs,yes
+147,148,Barbell hack squat,Legs,no
+148,149,Deficit deadlift,Legs,unilaterally
+149,150,Rack pull,Other,unilaterally
+150,151,Deficit Romanian deadlift,Legs,unilaterally
+151,152,B-stance Romanian deadlift,Legs,unilaterally
+152,153,Snatch-grip Romanian deadlift,Legs,unilaterally
+154,155,Frog pump,Other,unilaterally
+155,156,Kas glute bridge,Legs,unilaterally
+156,157,Swiss-ball leg curl,Legs,unilaterally
+157,158,Slider leg curl,Legs,unilaterally
+158,159,Standing calf raise,Calves/Tibs,yes
+159,160,Seated calf raise,Calves/Tibs,yes
+160,161,Donkey calf raise,Calves/Tibs,yes
+161,162,Leg-press calf raise,Calves/Tibs,yes
+163,164,Tibialis raise (machine/wall),Calves/Tibs,yes
+164,165,Tib bar dorsiflexion,Calves/Tibs,yes
+165,166,Backward sled drag,Full Body/Conditioning,unilaterally
+166,167,Hip abduction machine,Glutes/Hips,unilaterally
+167,168,Hip adduction machine,Glutes/Hips,unilaterally
+168,169,Cable hip abduction (standing),Glutes/Hips,yes
+169,170,Cable hip adduction (standing),Glutes/Hips,yes
+170,171,Lateral band walk,Glutes/Hips,unilaterally
+171,172,Clamshell (banded),Glutes/Hips,unilaterally
+172,173,Machine high row,Back,unilaterally
+173,174,Chest-supported T-bar row,Back,unilaterally
+174,175,One-arm kneeling lat pulldown,Back,unilaterally
+175,176,Iso-lateral row (Hammer Strength),Back,yes
+176,177,Machine pullover (Nautilus),Back,unilaterally
+177,178,Dumbbell pullover,Back,yes
+179,180,Scapular pull-up,Back,unilaterally
+180,181,Machine lateral raise,Shoulders,unilaterally
+181,182,Cable lateral raise,Shoulders,yes
+182,183,Leaning lateral raise,Shoulders,unilaterally
+183,184,Cable Y-raise,Other,yes
+184,185,Reverse pec deck,Other,unilaterally
+185,186,Upright row (EZ-bar),Shoulders,unilaterally
+186,187,Cuban press,Other,unilaterally
+187,188,Barbell shrug,Other,unilaterally
+188,189,Dumbbell shrug,Other,yes
+189,190,Trap-bar shrug,Other,unilaterally
+190,191,Pec deck fly,Chest,unilaterally
+191,192,Cable crossover (mid),Chest,yes
+192,193,High-to-low cable fly,Chest,yes
+193,194,Low-to-high cable fly,Chest,yes
+194,195,Dumbbell squeeze press,Chest,yes
+195,196,EZ-bar curl,Arms,unilaterally
+196,197,Zottman curl,Arms,unilaterally
+197,198,Overhead cable triceps extension (rope),Arms,yes
+198,199,Incline push-up,Chest,unilaterally
+199,200,Ring push-up,Chest,unilaterally
+200,201,Deficit push-up,Chest,unilaterally
+201,202,Cross-body cable fly,Chest,yes
+202,203,"Rear delt fly (dumbbell, bent-over)",Chest,yes
+203,204,Seated lateral raise,Shoulders,unilaterally
+204,205,Lying lateral raise (on bench),Shoulders,unilaterally
+205,206,Cable rear delt fly,Chest,yes
+206,207,Spider curl,Arms,unilaterally
+207,208,Bayesian cable curl (behind body),Arms,yes
+208,209,Drag curl (barbell),Arms,unilaterally
+209,210,Cable hammer curl (rope),Arms,yes
+210,211,Cross-body hammer curl,Arms,unilaterally
+211,212,JM press,Arms,unilaterally
+212,213,Bench dip,Arms,unilaterally
+213,214,Triceps kickback (dumbbell),Arms,yes
+215,216,Copenhagen plank,Core,unilaterally
+216,217,Side bend (dumbbell),Other,yes
+217,218,Cable crunch (kneeling),Core,yes
+218,219,Reverse crunch,Core,unilaterally
+219,220,V-up,Core,unilaterally
+220,221,Toes-to-bar,Other,unilaterally
+221,222,Hanging windshield wiper,Core,unilaterally
+222,223,Zercher carry,Full Body/Conditioning,unilaterally
+224,225,Sandbag carry,Full Body/Conditioning,unilaterally
+225,226,Yoke carry,Full Body/Conditioning,unilaterally
+226,227,Sled drag (forward),Full Body/Conditioning,unilaterally
+227,228,Sled rope pull,Full Body/Conditioning,unilaterally
+228,229,Tire flip,Full Body/Conditioning,unilaterally
+229,230,Atlas stone to platform,Full Body/Conditioning,unilaterally
+230,231,Log clean and press,Full Body/Conditioning,unilaterally
+231,232,Axle clean and press,Full Body/Conditioning,unilaterally
+232,233,Kettlebell clean,Full Body/Conditioning,yes
+233,234,Kettlebell snatch,Full Body/Conditioning,yes
+234,235,Kettlebell push press,Other,yes
+235,236,Kettlebell Turkish get-up,Other,yes
+236,237,Kettlebell windmill,Other,yes
+237,238,Kettlebell goblet clean,Full Body/Conditioning,yes
+238,239,Kettlebell deadlift,Legs,yes
+239,240,Cable kickback (glute),Glutes/Hips,yes
+240,241,Quadruped hip extension (donkey kick),Glutes/Hips,unilaterally
+241,242,Fire hydrant (hip abduction),Glutes/Hips,unilaterally
+242,243,Banded hip thrust,Legs,unilaterally
+243,244,Hip thrust machine,Legs,unilaterally
+244,245,Ring row (bodyweight),Back,unilaterally
+245,246,Chest-supported rear delt fly (dumbbells),Chest,yes
+246,247,Wide-grip seated cable row,Back,yes
+247,248,Snatch high pull,Full Body/Conditioning,unilaterally
+248,249,Scapular push-up,Chest,unilaterally
+249,250,Kelso shrugs (upper back),Back,yes
+250,251,Kenaan flaps (lats),Back,yes
+251,252,Incline machine press,Chest,yes
+252,253,Leg Extension machine,Leg,yes
+254,255,Cable kickback (standing),Glutes/Hips,yes
+255,256,Donkey kick (machine),Glutes/Hips,unilaterally
+256,257,Cable concentration curl,Arms,yes
+257,258,Reverse-grip triceps pushdown,Arms,unilaterally
+258,259,Preacher curl (machine),Arms,unilaterally
+259,260,EZ-bar preacher curl,Arms,unilaterally
+260,261,Smith machine incline bench,Chest,unilaterally
+261,262,Machine front raise,Shoulders,unilaterally
+262,263,Barbell seated overhead press,Shoulders,unilaterally
+263,264,Reverse-grip lat pulldown,Back,unilaterally
+264,265,Close-grip lat pulldown,Back,unilaterally
+265,266,Cable side bend,Core,yes
+266,267,Machine crunch,Core,unilaterally
+267,268,Plank shoulder tap,Core,yes
+268,269,Smith machine calf raise,Calves/Tibs,unilaterally
+269,270,Donkey calf raise (machine),Calves/Tibs,unilaterally
+270,271,Tibialis raise with dumbbell,Calves/Tibs,yes
+271,272,Clean and jerk,Full Body/Conditioning,unilaterally
+272,273,Burpee,Full Body/Conditioning,unilaterally
+273,274,Thruster,Full Body/Conditioning,unilaterally
+274,275,Weighted sit-up,Core,yes
+275,276,Decline sit-up,Core,unilaterally

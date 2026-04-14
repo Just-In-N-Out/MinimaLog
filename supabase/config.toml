@@ -1,0 +1,13 @@
+project_id = "your-project-id"
+
+[functions.generate-workout-suggestions]
+verify_jwt = true
+
+[functions.generate-ai-tips]
+verify_jwt = true
+
+[functions.process-avatar]
+verify_jwt = true
+
+[functions.revenuecat-webhook]
+verify_jwt = false

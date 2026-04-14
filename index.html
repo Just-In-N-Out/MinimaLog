@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+
+    <!-- Content Security Policy - DISABLED FOR DEV SERVER -->
+    <!-- ⚠️ IMPORTANT: Re-enable CSP before TestFlight/production builds -->
+    <!-- <meta
+      http-equiv="Content-Security-Policy-Report-Only"
+      content="
+        default-src 'self';
+        script-src 'self';
+        style-src 'self' 'unsafe-inline';
+        img-src 'self' data: blob: https://*.supabase.co https://exercisedb-api-tau.vercel.app capacitor://;
+        connect-src 'self' https://*.supabase.co https://generativelanguage.googleapis.com https://exercisedb-api-tau.vercel.app wss://*.supabase.co;
+        font-src 'self' data:;
+        object-src 'none';
+        base-uri 'self';
+        form-action 'self';
+        frame-ancestors 'none';
+        upgrade-insecure-requests;
+      "
+    /> -->
+
+    <title>Minimalift - Your Personal Strength Journey</title>
+    <meta name="description" content="Track your strength journey with Minimalift. Minimalist workout tracking for maximum gains." />
+    <meta name="author" content="Minimalift" />
+
+    <meta property="og:title" content="Minimalift - Your Personal Strength Journey" />
+    <meta property="og:description" content="Track your strength journey with a clean, motivating interface designed for lifters." />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Accessibility & Mobile Optimizations -->
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Minimalift" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Blocking theme detection script - runs before CSS to prevent flash -->
+    <script>
+      (function() {
+        var stored = localStorage.getItem('weightstone-theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        // If stored theme is 'system' or not set, use system preference
+        // If stored theme is 'dark' or 'light', use that explicitly
+        var isDark = stored === 'dark' || (stored !== 'light' && prefersDark);
+        if (isDark) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+
+    <!-- Prevent white/black flash before styles load - apply background immediately -->
+    <style>
+      html, body, #initial-splash {
+        background-color: #ffffff !important;
+        margin: 0;
+      }
+      /* Support .dark class (from blocking script above) */
+      html.dark, html.dark body, html.dark #initial-splash {
+        background-color: #000000 !important;
+      }
+      /* Fallback for prefers-color-scheme if script hasn't run */
+      @media (prefers-color-scheme: dark) {
+        html:not(.light), html:not(.light) body, html:not(.light) #initial-splash {
+          background-color: #000000 !important;
+        }
+      }
+      /* Ensure splash shows immediately */
+      #initial-splash {
+        opacity: 1 !important;
+        visibility: visible !important;
+      }
+    </style>
+  </head>
+
+  <body style="margin: 0;">
+    <!-- Initial splash screen - exact copy of React splash -->
+    <!-- aria-hidden prevents screen readers from being trapped in splash overlay -->
+    <div id="initial-splash" aria-hidden="true" style="position: fixed; inset: 0; z-index: 9999; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">
+      <style>
+        /* Theme colors matching Tailwind config */
+        :root {
+          --background: 0 0% 100%;
+          --foreground: 0 0% 0%;
+          --primary: 0 0% 0%;
+          --primary-foreground: 0 0% 100%;
+        }
+        /* Dark theme via .dark class (primary method) */
+        html.dark {
+          --background: 0 0% 0%;
+          --foreground: 0 0% 100%;
+          --primary: 0 0% 100%;
+          --primary-foreground: 0 0% 0%;
+        }
+        html.dark #splash-outer {
+          background-color: #000000 !important;
+        }
+        html.dark #splash-outer > div:first-child {
+          background: linear-gradient(to bottom right, #000000, rgba(0,0,0,0.6), #000000) !important;
+        }
+        html.dark #initial-splash .gradient-overlay {
+          background: radial-gradient(circle at 20% 20%, rgba(250,250,250,0.14), transparent),
+                      radial-gradient(circle at 80% 30%, rgba(250,250,250,0.12), transparent),
+                      radial-gradient(circle at 50% 80%, rgba(250,250,250,0.16), transparent) !important;
+        }
+        html.dark #initial-splash .trail-effect {
+          background: linear-gradient(to bottom, hsla(var(--primary) / 0.35), hsla(var(--primary) / 0.15), transparent) !important;
+        }
+        /* Fallback: prefers-color-scheme for when blocking script hasn't run */
+        @media (prefers-color-scheme: dark) {
+          html:not(.light) {
+            --background: 0 0% 0%;
+            --foreground: 0 0% 100%;
+            --primary: 0 0% 100%;
+            --primary-foreground: 0 0% 0%;
+          }
+          html:not(.light) #splash-outer {
+            background-color: #000000 !important;
+          }
+          html:not(.light) #splash-outer > div:first-child {
+            background: linear-gradient(to bottom right, #000000, rgba(0,0,0,0.6), #000000) !important;
+          }
+          html:not(.light) #initial-splash .gradient-overlay {
+            background: radial-gradient(circle at 20% 20%, rgba(250,250,250,0.14), transparent),
+                        radial-gradient(circle at 80% 30%, rgba(250,250,250,0.12), transparent),
+                        radial-gradient(circle at 50% 80%, rgba(250,250,250,0.16), transparent) !important;
+          }
+          html:not(.light) #initial-splash .trail-effect {
+            background: linear-gradient(to bottom, hsla(var(--primary) / 0.35), hsla(var(--primary) / 0.15), transparent) !important;
+          }
+        }
+        @keyframes breathing {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-8px); }
+        }
+        @keyframes trail-fade {
+          0% {
+            opacity: 0.28;
+            transform: translateY(22px) scaleY(0.3);
+          }
+          100% {
+            opacity: 0;
+            transform: translateY(70px) scaleY(1);
+          }
+        }
+        .animate-breathing {
+          animation: breathing 4s ease-in-out infinite;
+          will-change: transform;
+        }
+        .animate-trail {
+          animation: trail-fade 1s cubic-bezier(0.22, 0.05, 0.03, 1) forwards;
+        }
+        /* Responsive sizing */
+        .icon-circle {
+          height: 112px;
+          width: 112px;
+        }
+        .icon-svg {
+          width: 56px;
+          height: 56px;
+        }
+        .title-text {
+          font-size: 48px;
+        }
+        .subtitle-text {
+          font-size: 20px;
+        }
+        @media (min-width: 640px) {
+          .icon-circle {
+            height: 128px;
+            width: 128px;
+          }
+          .icon-svg {
+            width: 64px;
+            height: 64px;
+          }
+          .title-text {
+            font-size: 60px;
+          }
+          .subtitle-text {
+            font-size: 24px;
+          }
+        }
+      </style>
+
+      <!-- Outer container - fallback bg colors, CSS vars override when loaded -->
+      <div id="splash-outer" style="position: relative; display: flex; min-height: 100vh; width: 100%; align-items: center; justify-content: center; background-color: #ffffff;">
+        <!-- Gradient overlay 1 -->
+        <div style="pointer-events: none; position: absolute; inset: 0; background: linear-gradient(to bottom right, #ffffff, rgba(255,255,255,0.6), #ffffff);"></div>
+
+        <!-- Gradient overlay 2 (radial gradients) -->
+        <div class="gradient-overlay" style="pointer-events: none; position: absolute; inset: 0; filter: blur(48px); background: radial-gradient(circle at 20% 20%, rgba(15,23,42,0.2), transparent), radial-gradient(circle at 80% 30%, rgba(15,23,42,0.16), transparent), radial-gradient(circle at 50% 80%, rgba(15,23,42,0.18), transparent);"></div>
+
+        <!-- Content container -->
+        <div style="position: relative; z-index: 10; display: flex; width: 100%; max-width: 576px; min-height: 100vh; flex-direction: column; align-items: center; justify-content: center; padding-left: 24px; padding-right: 24px; text-align: center;">
+          <div style="position: relative; display: flex; width: 100%; flex: 1; flex-direction: column; align-items: center; justify-content: center;">
+
+            <!-- Trail effect -->
+            <div class="animate-trail" style="pointer-events: none; position: absolute; left: 0; right: 0; top: 88px; display: flex; justify-content: center; filter: blur(18px);">
+              <div class="trail-effect" style="height: 96px; width: 96px; border-radius: 9999px; background: linear-gradient(to bottom, hsla(var(--primary) / 0.35), hsla(var(--primary) / 0.15), transparent); transform-origin: 50% 0%;"></div>
+            </div>
+
+            <!-- Icon and text -->
+            <div class="animate-breathing" style="display: flex; flex-direction: column; align-items: center;">
+              <!-- Dumbbell icon circle -->
+              <div class="icon-circle" style="display: flex; align-items: center; justify-content: center; border-radius: 9999px; background-color: hsl(var(--primary)); box-shadow: 0 25px 50px -18px rgba(15,23,42,0.55); color: hsl(var(--primary-foreground));">
+                <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.4 14.4 9.6 9.6"/>
+                  <path d="M18.657 21.485a2 2 0 1 1-2.829-2.828l-1.767 1.768a2 2 0 1 1-2.829-2.829l6.364-6.364a2 2 0 1 1 2.829 2.829l-1.768 1.767a2 2 0 1 1 2.828 2.829z"/>
+                  <path d="m21.5 21.5-1.4-1.4"/>
+                  <path d="M3.9 3.9 2.5 2.5"/>
+                  <path d="M6.404 12.768a2 2 0 1 1-2.829-2.829l1.768-1.767a2 2 0 1 1-2.828-2.829l2.828-2.828a2 2 0 1 1 2.829 2.828l1.767-1.768a2 2 0 1 1 2.829 2.829z"/>
+                </svg>
+              </div>
+
+              <!-- Title -->
+              <h1 class="title-text" style="margin: 0; margin-top: 32px; padding-bottom: 4px; font-weight: 700; line-height: 1; letter-spacing: -0.025em; background: linear-gradient(to right, hsl(var(--primary)), hsla(var(--primary) / 0.6)); -webkit-background-clip: text; background-clip: text; color: transparent;">
+                MinimaLog
+              </h1>
+
+              <!-- Subtitle -->
+              <p class="subtitle-text" style="margin: 0; margin-top: 12px; font-weight: 500; color: hsla(var(--foreground) / 0.8);">
+                You log <span style="font-weight: 600; color: hsl(var(--primary));">+</span> we track
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
