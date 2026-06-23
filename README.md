@@ -1,6 +1,6 @@
 # MinimaLog
 
-A production iOS workout journal with offline-first architecture, end-to-end encryption, and real-time social features. Built with React, TypeScript, and Capacitor -- shipped to real users on the App Store.
+A production iOS workout journal with offline-first architecture, client-side encryption, and real-time social features. Built with React, TypeScript, and Capacitor -- live at [minimalog.fit](https://minimalog.fit).
 
 ## Features
 
